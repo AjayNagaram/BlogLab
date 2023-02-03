@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace BlogLab.Repository
 {
-    internal interface IAccountRepository
+    public interface IAccountRepository
     {
         public Task<IdentityResult> CreateAsync(ApplicationUserIdentity user,
             CancellationToken token);
